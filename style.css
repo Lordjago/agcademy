@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  color: #000;
+  transition: all 0.5s ease;
+}
+a,
+button,
+select {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 109px;
+  padding: 0px 140px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  height: 26px;
+  object-fit: cover;
+}
+.header-link a {
+  font-weight: 700;
+}
+.header-link button {
+  margin-left: 45px;
+  padding: 20px 40px;
+  background: rgba(33, 86, 218, 1);
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  padding: 43px 140px;
+}
+.hero-text {
+  /* margin-left: 20px; */
+  position: relative;
+}
+.hero-text .title {
+  color: rgba(33, 86, 218, 1);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.hero-text .desc {
+  margin-top: 26px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0px 80px 0px 0px
+}
+
+.hero-text .evol {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 70px;
+}
+
+.hero-text .evol strong {
+  color: rgba(33, 86, 218, 1);
+}
+
+.hero-text img {
+  position: absolute;
+  top: 138px;
+  left: 10px;
+}
+
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(33, 86, 218, 1);
+}
+.cta input {
+  padding: 10px 10px;
+  /* width: 100%; */
+  outline: none;
+  border: none;
+}
+.cta button {
+  padding: 20px 40px;
+  background: rgba(33, 86, 218, 1);
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.hero-img img {
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+.info-grid {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px; */
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 80px;
+  padding: 43px 140px;
+}
+
+.info-grid .info-item {
+  background-color: rgba(217, 217, 217, 0.4);
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 15px;
+  padding: 30px 20px;
+  flex: 1;
+}
+
+.info-item img {
+  width: 50px;
+  height: 43px;
+}
+.info-item h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 10px;
+}
+
+.info-item p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: -23px;
+}
+
+.info-grid-sec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-top: 50px;
+  padding: 43px 140px;
+}
+
+.info-grid-sec .info-item {
+  background: #fff;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  padding: 43px 140px;
+}
+.offer-text {
+  position: relative;
+}
+.offer-text .title {
+  color: rgba(33, 86, 218, 1);
+  color: #000; 
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.offer-text .desc {
+  margin-top: 26px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  /* text-align: justify; */
+  padding: 0px 80px 0px 0px
+}
+
+.offer-text .evol {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 70px;
+}
+
+.offer-text .evol strong {
+  color: rgba(33, 86, 218, 1);
+}
+
+.offer-text img {
+  position: absolute;
+  top: 138px;
+  left: 10px;
+}
+.offer-text h6{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.195em;
+  text-transform: uppercase;
+  margin-bottom: -25px;
+}
+.offer button{
+  padding: 20px 120px;
+  background: rgba(33, 86, 218, 1);
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+}
+.design {
+  margin: 25px 0px;
+  background: rgba(33, 86, 218, 0.2);
+  text-align: center;
+  padding: 35px 320px;
+  color: #000;
+}
+
+
+.design h1 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 77px;
+}
+.design p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: -10px;
+  line-height: 30px;
+}
+.success-detail{
+    background: rgba(255, 199, 0, 0.2); 
+    padding: 35px 150px; 
+    margin: 25px 0px;
+    margin-bottom: 45px;
+    text-align: center;
+    color: #000;
+}
+.success-detail h1 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 77px;
+}
+.success-detail p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: -10px;
+  line-height: 30px;
+}
+.why-agcad{
+  padding: 20px 220px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.why-agcad strong{
+  font-size: 48px;
+  font-weight: 700;
+}
+.agcad-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-top: 55px;
+}
+.agcad-grid .agcad-item{
+  background: #FAFAFA;
+border: 1px solid #E9E9E9;
+border-radius: 20px;
+  text-align: left;
+  padding: 30px 30px;
+}
+
+.agcad-item h4{
+  font-size: 20px;
+  font-weight: 500;
+}
+.agcad-item p{
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -12px;
+}
+.agcad-item img{
+  width: 80px;
+  object-fit: cover;
+}
+.tutor{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  background: rgba(255, 199, 0, 0.2); 
+  padding: 120px 150px; 
+  margin-bottom: 45px;
+}
+.tutor-text .title{
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.tutor-text .desc{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0px 100px 0px 0px;
+}
+
+.tutor-text button{
+  margin-top: 50px;
+  color: #fff;
+  background: #2156DA;
+  padding: 25px 80px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding: 43px 140px;
+}
+.footer-list p{
+  font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+margin-bottom: 30px;
+}
+.social-media{
+  display: flex;
+  flex-direction: row;
+}
+.footer-list.move{
+  margin-left: 90px;
+}
+.footer-list h6{
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.footer-list a{
+  display: block;
+  margin-bottom: 10px;
+}
+.social-media a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 13px;
+  margin-bottom: 70px;
+  background-color: #2156DA;
+}
+
+.hamburger{
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1250px){
+  .hero, .info-grid, .header, .footer, .offer, .tutor, .info-grid-sec{
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  .hero-text .title{
+    font-size: 40px;
+  }
+  .hero-text .desc{
+    font-size: 16px;
+  }
+  .hero-text .evol{
+    font-size: 14px;
+  }
+  .design{
+    padding: 35px 280px;
+  }
+  .design h1{
+    font-size: 40px;
+  }
+  .why-agcad{
+    padding: 20px 150px;
+  }
+  .tutor-text .title{
+    font-size: 32px;
+  }
+  .tutor-text .desc{
+    font-size: 15px;
+  }
+  .cta button{
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 986px){
+  .header .header-link{
+    display: none;
+  }
+  .header .hamburger{
+    display: block;
+  }
+  .hero, .info-grid, .header, .footer, .offer, .tutor, .info-grid-sec{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .hero-text{
+    width: 390px;
+  }
+  .hero-img img, .offer-img img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .hero-text .title, .offer .title{
+    font-size: 35px;
+  }
+ .offer-text .desc{
+  font-size: 15px;
+ }
+  .info-grid{
+   grid-template-columns: 1fr;
+  }
+  .design{
+    padding: 35px 180px;
+  }
+  .design h1{
+    font-size: 32px;
+  }
+  .offer h6{
+    font-size: 14px;
+  }
+  .offer .title{
+    line-height: 50px;
+  }
+  .why-agcad{
+    padding: 20px 70px;
+  }
+  .why-agcad strong{
+    font-size: 35px
+  };
+  
+  .tutor-text .title{
+    font-size: 32px;
+  }
+  .tutor button{
+     padding: 15px 25px;
+     font-size: 12px;
+  }
+  .tutor-text .desc{
+    padding: 0px 30px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .info-grid .info-item {
+    background-color: rgba(217, 217, 217, 0.4);
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 15px;
+    padding: 30px 20px;
+    flex: 0 0 auto;
+}
+.hero-text img {
+ display: none;
+}
+  .hero, .info-grid, .header, .footer, .offer, .tutor, .info-grid-sec{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .hero, .offer, .info-grid-sec {
+    grid-template-columns: 1fr;
+  }
+  .hero-text, .offer-text{
+    width: 100%;
+    text-align: center;
+  }
+  .hero-text{
+    margin: 0px;
+  }
+  .hero-text .title{
+    font-size: 47px;
+    line-height: 77px;
+  }
+  .hero-text .desc, .offer .desc{
+    font-size: 14px;
+    padding: 0px;
+  }
+  .success-detail{
+    padding: 35px 25px;
+  }
+  .success-detail h1{
+    font-size: 45px;
+  }
+  .design{
+    margin: 0px;
+    padding: 35px 15px;
+  }
+  .design h1{
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .offer button {
+    width: 100%;
+  }
+  .offer h6{
+    font-size: 14px;
+  }
+  .offer .title{
+    line-height: 50px;
+  }
+  .why-agcad{
+    padding: 20px 30px;
+  }
+  .why-agcad strong{
+    font-size: 28px
+  };
+  
+  .tutor-text .title{
+    font-size: 32px;
+  }
+  .tutor button{
+     padding: 15px 25px;
+     font-size: 14px;
+  }
+  .tutor-text .desc{
+    padding: 0px 30px 0px 0px;
+  }
+  .footer{
+    grid-template-columns: 1fr;
+  }
+  .footer-list.move{
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .cta button{
+    padding: 20px 23px;
+  }
+  .agcad-grid{
+    grid-template-columns: 1fr;
+  }
+  .tutor{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .tutor-img img{
+    width: 360px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-text img {
+    position: absolute;
+    top: 148px;
+    left: 140px;
+  }
+}
+@media screen and (max-width: 345px){
+  .hero, .info-grid, .header, .footer, .offer, .tutor, .info-grid-sec{
+    padding-right: 10x;
+    padding-left: 10x;
+  }
+  .hero, .offer, .info-grid-sec {
+    grid-template-columns: 1fr;
+  }
+  .hero-text, .offer-text{
+    width: 100%;
+    text-align: center;
+  }
+  .hero-text .title{
+    font-size: 43px;
+    line-height: 77px;
+  }
+}
