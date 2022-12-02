@@ -444,7 +444,7 @@ margin-bottom: 30px;
     right: 0;
     padding: 60px;
     display: none;
-    -webkit-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease;
     overflow: hidden;
     transition: 0.4s;
     z-index: 100;
@@ -461,7 +461,7 @@ margin-bottom: 30px;
   .header-link button{
     margin: 0px;
     color: #2156DA;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     background-color: #fff;
     /* padding: 10px 40px; */
