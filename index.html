@@ -15,7 +15,9 @@
         <button>Notify Me</button>
       </div>
       <div class="hamburger">
-        <img src="img/menu.svg" alt="Image">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </header>
     <main>
@@ -218,5 +220,16 @@
         <img src="img/logo.svg" alt="Logo" style="margin-top: 70px">
       </footer>
     </main>
+    <script>
+      const hamburger = document.querySelector('.hamburger')
+      const navMenu = document.querySelector('.header-link')
+
+      hamburger.addEventListener('click', () => {
+        console.log("Clicked")
+        hamburger.classList.toggle('active')
+        navMenu.classList.toggle('active')
+      })
+    </script>
+
   </body>
 </html>
