@@ -562,7 +562,7 @@ margin-bottom: 30px;
     border-radius: 15px;
     padding: 30px 20px;
     flex: 0 0 auto;
-    width: calc(100vw - 145px);
+    width: calc(100vw - 140px);
 }
 ::-webkit-scrollbar { 
   display: none; 
