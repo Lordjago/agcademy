@@ -467,12 +467,14 @@ margin-bottom: 30px;
     top: 0;
   }
   .header-link a{
+    font-size: 18px;
     margin-bottom: 40px;
     color: #fff;
   }
   .header-link button{
     margin: 0px;
     color: #2156DA;
+    font-size: 18px;
     font-weight: 700;
     background-color: #fff;
     /* padding: 10px 40px; */
