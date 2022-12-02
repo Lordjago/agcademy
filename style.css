@@ -676,7 +676,7 @@ margin-bottom: 30px;
     object-fit: cover;
   }
 }
-@media screen and (max-width: 427px) {
+@media screen and (max-width: 450px) {
   .hero-text img {
     top: 150px;
     left: 140px;
