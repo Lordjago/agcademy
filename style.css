@@ -25,18 +25,6 @@ a {
   padding: 0px 140px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* .responsive-nav {
-  background-color: #2156DA;
-  z-index: 1;
-}
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 109px;
-  padding: 0px 140px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-} */
 .header img {
   /* height: 26px; */
   object-fit: cover;
@@ -126,15 +114,15 @@ a {
 }
 
 .info-grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
-  row-gap: 20px;
-  /* display: flex;
+  row-gap: 20px; */
+  display: flex;
   flex-wrap: nowrap;
   gap: 18px;
   overflow-x: auto;
-  overflow-y: hidden; */
+  overflow-y: hidden;
   margin-top: 80px;
   padding: 43px 140px;
 }
@@ -550,13 +538,17 @@ margin-bottom: 30px;
     border-radius: 15px;
     padding: 30px 20px;
     flex: 0 0 auto;
+    width: calc(100vw - 100px);
+}
+::-webkit-scrollbar { 
+  display: none; 
 }
   .hero, .info-grid, .header, .footer, .offer, .tutor, .info-grid-sec{
     padding-right: 20px;
     padding-left: 20px;
   }
   .info-item h4{
-    font-size: 20px;
+    font-size: 19px;
   }
   .info-item p{
     font-size: 16px;
