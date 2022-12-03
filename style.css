@@ -464,7 +464,7 @@ margin-bottom: 30px;
     display: none;
     -webkit-transition: all 0.4s ease;
     overflow: hidden;
-    transition: 0.4s;
+    transition: -webkit-transition 0.4s;
     z-index: 100;
   }
   .header-link.active{
