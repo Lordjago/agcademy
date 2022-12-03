@@ -550,6 +550,9 @@ margin-bottom: 30px;
 }
 
 @media screen and (max-width: 700px){
+  .header {
+    height: 75px;
+  }
   .hero-text img {
     position: absolute;
     width: 95px;
@@ -571,6 +574,9 @@ margin-bottom: 30px;
     padding-right: 20px;
     padding-left: 20px;
   }
+  .info-grid, .info-grid-sec{
+    margin-top: -30px;
+  }
   .info-item h4{
     font-size: 19px;
   }
@@ -589,8 +595,13 @@ margin-bottom: 30px;
     margin-top: -30px;
   }
   .hero-text .title{
+    margin: 20px 0px;
     font-size: 54px;
     line-height: 70px;
+  }
+
+  .hero-text .evol{
+    margin: 20px 0px;
   }
   .hero-text .desc, .offer .desc, .hero-text .evol{
     font-size: 17px;
