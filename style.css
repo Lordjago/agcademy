@@ -554,7 +554,8 @@ margin-bottom: 30px;
     height: 80px;
   }
   .header img{
-    width: 160px;
+    width: 140px;
+    height: 22px;
     object-fit: cover;
   }
   .hero-text img {
