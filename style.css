@@ -553,6 +553,10 @@ margin-bottom: 30px;
   .header {
     height: 80px;
   }
+  .header img{
+    width: 160px;
+    object-fit: cover;
+  }
   .hero-text img {
     position: absolute;
     width: 95px;
