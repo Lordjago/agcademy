@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="header">
-      <img src="https://agcademy.netlify.app/static/media/logo.3b711310.svg" alt="Logo" />
+      <img src="/img/logo.svg" alt="Logo" />
       <div class="header-link">
         <a href="#">Blog</a>
         <button>Notify Me</button>
@@ -25,8 +25,9 @@
       <div class="hero">
         <div class="hero-text">
           <h1 class="title">
-            Scale <br />
-            your Agribusiness.
+            <span class="animate-text"></span><br>
+            <span>your Agribusiness.</span>
+            
           </h1>
           <img src="img/vector.png" alt="" />
           <p class="desc">
@@ -230,7 +231,22 @@
     <script>
       const hamburger = document.querySelector('.hamburger')
       const navMenu = document.querySelector('.header-link')
+      const text = document.querySelector('.animate-text')
 
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Scale";
+        }, 0);
+
+        setTimeout(() => {
+          text.textContent = "Start";
+        }, 4000);
+      }
+
+        textLoad()
+        setInterval(() => {
+          textLoad()
+        }, 8000);
       hamburger.addEventListener('click', () => {
         console.log("Clicked")
         hamburger.classList.toggle('active')
