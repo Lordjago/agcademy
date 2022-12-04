@@ -27,7 +27,7 @@ a {
 }
 .header img {
   height: 26px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .header-link a {
   font-weight: 700;
@@ -109,7 +109,7 @@ a {
 }
 
 .hero-img img {
-  object-fit: contain;
+  object-fit: cover;
   margin-left: 10px;
 }
 
@@ -309,7 +309,7 @@ border-radius: 20px;
 }
 .agcad-item img{
   width: 80px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .tutor{
   display: grid;
@@ -507,7 +507,7 @@ margin-bottom: 30px;
   }
   .hero-img img, .offer-img img{
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   .hero-text .title, .offer .title{
     font-size: 35px;
@@ -701,7 +701,7 @@ margin-bottom: 30px;
  
   .tutor-img img{
     width: 360px;
-    object-fit: contain;
+    object-fit: cover;
   }
 }
 @media screen and (max-width: 450px) {
