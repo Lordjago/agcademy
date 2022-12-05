@@ -733,9 +733,13 @@ margin-bottom: 30px;
   } */
 }
 @media screen and (max-width: 450px) {
-  .hero-img img, .offer-img img, .tutor-img img{
+  .hero-img img, .offer-img img{
     margin-top: 18px;
     /* object-fit: cover; */
+    width: 100%;
+    height: 425px;
+  }
+  .tutor-img img{
     width: 100%;
     height: 425px;
   }
