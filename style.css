@@ -422,9 +422,10 @@ margin-bottom: 30px;
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0l3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
+
 
 @media screen and (max-width: 1250px){
   .hero-text img {
@@ -729,6 +730,11 @@ margin-bottom: 30px;
   } */
 }
 @media screen and (max-width: 450px) {
+  .hero-img img, .offer-img img, .tutor-img img{
+    object-fit: cover;
+    width: 350px;
+    height: 455px;
+  }
   .hero-text img {
     top: 135px;
     left: 140px;
