@@ -83,7 +83,10 @@ a {
   left: 10px;
   object-fit: cover;
 }
-.animate-text:before{
+.title .text{
+  position: relative;
+}
+.animate-text::before{
   content: "";
   position: absolute;
   top: 0;
@@ -191,7 +194,7 @@ a {
   width:50px;
 }
 .info-item h4{
-  font-size: 25px;
+  font-size: 20px;
 }
 .info-item p{
   font-size: 14px;
