@@ -732,8 +732,8 @@ margin-bottom: 30px;
 @media screen and (max-width: 450px) {
   .hero-img img, .offer-img img, .tutor-img img{
     object-fit: cover;
-    width: 350px;
-    height: 455px;
+    width: 100%;
+    height: 425px;
   }
   .hero-text img {
     top: 135px;
